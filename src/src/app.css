@@ -30,7 +30,7 @@ body::after {
 	z-index: -1;
 
 	background-color: #2d383f;
-	background-image: url(./tileable_bg.png);
+	background-image: url(./tileable_bg_big.png);
 	background-repeat: repeat;
 
 	filter: brightness(50%);

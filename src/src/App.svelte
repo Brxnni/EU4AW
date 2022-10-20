@@ -1,13 +1,11 @@
 <script>
-	import Counter from './components/Counter.svelte'
+	import Checkbox from './components/Checkbox.svelte'
 </script>
 
 <main>
 	<h1>Vite + Svelte</h1>
 
-	<div class="card">
-		<Counter />
-	</div>
+	<Checkbox />
 </main>
 
 <style>
