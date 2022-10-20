@@ -1,5 +1,8 @@
 <script>
 
+	import checkbox_unchecked from "./../assets/checkbox_unchecked.png";
+	import checkbox_checked from "./../assets/checkbox_checked.png";
+
 	export let state = false;
 
 	function click(){
@@ -14,7 +17,7 @@
 		width: 32px;
 		height: 32px;
 		margin: 3px;
-		background-image: url(./checkbox_unchecked.png);
+		background-image: url(./../assets/checkbox_unchecked.png);
 	}
 
 	div:hover {
@@ -22,7 +25,7 @@
 	}
 
 	div.checked {
-		background-image: url(./checkbox_checked.png);
+		background-image: url(./../assets/checkbox_checked.png);
 	}
 
 </style>
