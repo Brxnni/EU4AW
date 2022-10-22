@@ -5,7 +5,7 @@
 
 :root {
 	font-family: "EU4", "Lato", Helvetica, Arial, serif;
-	font-size: 16px;
+	font-size: 22px;
 
 	color-scheme: dark light;
 
@@ -29,6 +29,7 @@ body::after {
 	bottom: 0;
 	z-index: -1;
 
+	/* In case image doesn't load, display color that is similar */
 	background-color: #2d383f;
 	background-image: url(./../public/tileable_bg_big.png);
 	background-repeat: repeat;

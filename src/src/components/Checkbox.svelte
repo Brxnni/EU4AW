@@ -3,10 +3,10 @@
 	import checkbox_unchecked from "./../assets/checkbox_unchecked.png";
 	import checkbox_checked from "./../assets/checkbox_checked.png";
 
-	export let state = false;
+	export let checked = false;
 
 	function click(){
-		state = !state;
+		checked = !checked;
 	}
 
 </script>
@@ -14,10 +14,13 @@
 <style>
 
 	div {
+		display: inline-block;
 		width: 32px;
 		height: 32px;
-		margin: 3px;
+		margin: 0 0 -9px 0;
 		background-image: url(./../assets/checkbox_unchecked.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 	}
 
 	div:hover {
@@ -31,4 +34,4 @@
 </style>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="{state ? 'checked' : ''}" on:click={click}></div>
+<div class="{checked ? 'checked' : ''}" on:click={click}></div>
