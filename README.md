@@ -11,3 +11,8 @@ Tools I used to make the website.
 ## ./extracted
 
 Files grabbed from the EU4 source that may be used for the Website, but are still unorganized.
+
+## TODO
+
+* Hide background behing border using a custom path in `BorderContainer.svelte`
+* Make border of `BoardContainer.svelte` look nicer by adding some semi-transparent pixels to `./assets/gold_border.png`

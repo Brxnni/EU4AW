@@ -1,6 +1,7 @@
 <script>
-	import Checkbox from './components/Checkbox.svelte';
-	import Button from './components/Button.svelte';
+	import BorderContainer from "./components/BorderContainer.svelte";
+	import Checkbox from "./components/Checkbox.svelte";
+	import Button from "./components/Button.svelte";
 </script>
 
 <main>
@@ -8,6 +9,13 @@
 
 	<p> Cool Checkbox: <Checkbox checked/> </p>
 	<Button> Dynamic Button 😎 </Button>
+
+	<BorderContainer>
+
+		<p>I am inside a container, look at me!</p>
+		<Button> I am also inside a container 😎 </Button>
+
+	</BorderContainer>
 </main>
 
 <style>
