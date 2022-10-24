@@ -22,10 +22,13 @@
 		   space between the inline-block elements */
 		font-size: 0;
 		height: 58px;
+		max-width: 80% !important;
 
 		/* Make sure backgrounds work when bigger */
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+
+		white-space: nowrap;
 	}
 
 	div.button {
@@ -58,6 +61,7 @@
 
 		/* Repeat background (almost unnoticable, need to improve on that) */
 		background-repeat: repeat-x;
+		background-size: 139px 58px;
 	}
 	
 	/* Different images with normal and on hover */
@@ -83,13 +87,16 @@
 		/* Min-width is 139px, gets bigger with content */
 		min-width: 139px;
 		width: fit-content;
+		max-width: 100%;
 		
-		padding: 0 20px 0 20px;
+		padding: 0 30px 0 30px;
 
 		/* Reset font-size from 0 to normal size */
 		font-size: 1rem;
 
 		/* Force into one line */
+		text-overflow: ellipsis;
+		overflow: hidden;
 		white-space: nowrap;
 	}
 
