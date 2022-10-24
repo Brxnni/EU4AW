@@ -14,20 +14,32 @@
 <style>
 
 	div {
+		/* Inline */
 		display: inline-block;
+			
+		/* This can be any size, but bigger than 32px looks blurry */
 		width: 32px;
-		height: 32px;
+		aspect-ratio: 1/1;
+
+		/* Adjust to text level */
 		margin: 0 0 -9px 0;
+
+		/* Checkbox image itself */
 		background-image: url(./../assets/checkbox_unchecked.png);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+
+		/* Prevent accidentally selecting when repeatedly clicking checkbox */
+		user-select: none;
 	}
 
 	div:hover {
+		/* No seperate images for hover, just extra brightness */
 		filter: brightness(110%);
 	}
 
 	div.checked {
+		/* Change image on state change */
 		background-image: url(./../assets/checkbox_checked.png);
 	}
 

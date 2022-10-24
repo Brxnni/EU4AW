@@ -2,6 +2,7 @@
 
 	export let onClick;
 
+	// Imports are needed so that the files are included in the build
 	import button_normal_end from "./../assets/button_normal_end.png";
 	import button_normal_middle from "./../assets/button_normal_middle.png";
 	import button_hover_end from "./../assets/button_hover_end.png";
@@ -10,40 +11,56 @@
 </script>
 
 <style>
+
+	/* Prevent selecting button text */
 	* { user-select: none; }
 
+	/* Inline */
 	div {
 		display: inline-block;
 		/* Set font-size to 0 so that there is no weird
 		   space between the inline-block elements */
 		font-size: 0;
 		height: 58px;
+
+		/* Make sure backgrounds work when bigger */
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	div.button {
+		height: 58px;
 	}
 
 	div.beginning {
 		width: 29px;
-		height: 58px;
+		height: 100%;
 	}
 
 	div.end {
 		width: 29px;
-		height: 58px;
+		height: 100%;
 		transform: scaleX(-1);
 	}
 
 	div.middle {
-		position: relative;
-		min-width: 139px;
+		/* Make sure its wide enough for text */
 		width: fit-content;
+		/* Full height */
+		height: 100%;
 		
 		/* This makes it so that the div doesn't go down when <span> is added */
 		vertical-align: top;
 		text-align: center;
 		
+		/* Make sure background div is under the text */
+		z-index: 0;
 
+		/* Repeat background (almost unnoticable, need to improve on that) */
 		background-repeat: repeat-x;
 	}
 	
+	/* Different images with normal and on hover */
 	div div.beginning { background-image: url("./../assets/button_normal_end.png"); }
 	div div.middle { background-image: url("./../assets/button_normal_middle.png"); }
 	div div.end { background-image: url("./../assets/button_normal_end.png"); }
@@ -52,22 +69,28 @@
 	div:hover div.middle { background-image: url("./../assets/button_hover_middle.png"); }
 	div:hover div.end { background-image: url("./../assets/button_hover_end.png"); }
 
+	/* Change cursor on hover for better ✨ UX ✨ */
 	div:hover {
 		cursor: pointer;
 	}
 
 	span {
+		/* Align exactly in the center */
 		display: block;
 		margin-top: 0.8em;
 		line-height: 100%;
+		
+		/* Min-width is 139px, gets bigger with content */
 		min-width: 139px;
 		width: fit-content;
 		
 		padding: 0 20px 0 20px;
-		font-size: 22px;
-		white-space: nowrap;
 
-		z-index: 2;
+		/* Reset font-size from 0 to normal size */
+		font-size: 1rem;
+
+		/* Force into one line */
+		white-space: nowrap;
 	}
 
 </style>

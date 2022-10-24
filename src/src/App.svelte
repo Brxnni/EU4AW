@@ -6,8 +6,8 @@
 <main>
 	<h1>EU4, Best Game in whole World</h1>
 
-	<p>Cool Checkbox: <Checkbox checked/> </p>
-	<Button> Vincencccoooooooo </Button>
+	<p> Cool Checkbox: <Checkbox checked/> </p>
+	<Button> Dynamic Button 😎 </Button>
 </main>
 
 <style>
