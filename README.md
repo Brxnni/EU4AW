@@ -8,6 +8,10 @@ Source files for the Website (Made in Svelte. God I love Svelte so much)
 
 Tools I used to make the website.
 
+Includes <a href="https://gitmoji.dev">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>.
+
 ## ./extracted
 
 Files grabbed from the EU4 source that may be used for the Website, but are still unorganized.
