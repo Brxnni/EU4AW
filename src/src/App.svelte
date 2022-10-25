@@ -1,7 +1,9 @@
 <script>
+	
 	import BorderContainer from "./components/BorderContainer.svelte";
 	import Checkbox from "./components/Checkbox.svelte";
 	import Button from "./components/Button.svelte";
+
 </script>
 
 <main>
@@ -16,7 +18,7 @@
 		<Button> I am also inside a container 😎 </Button>
 
 	</BorderContainer>
-	
+
 </main>
 
 <style>

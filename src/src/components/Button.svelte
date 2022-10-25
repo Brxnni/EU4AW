@@ -1,6 +1,6 @@
 <script>
 
-	export let onClick;
+	export let onClick = () => {};
 
 	// Imports are needed so that the files are included in the build
 	import button_normal_end from "./../assets/button_normal_end.png";
@@ -87,7 +87,7 @@
 		/* Min-width is 139px, gets bigger with content */
 		min-width: 139px;
 		width: fit-content;
-		max-width: 100%;
+		max-width: calc(100%);
 		
 		padding: 0 30px 0 30px;
 
