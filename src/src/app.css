@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "EU4";
 	src: url(./../public/normal.otf);
+	font-display: swap;
 }
 
 :root {
