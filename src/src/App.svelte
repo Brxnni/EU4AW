@@ -2,6 +2,7 @@
 	
 	import BorderContainer from "./components/BorderContainer.svelte";
 	import TextCheckbox from "./components/TextCheckbox.svelte";
+	import Button from "./components/Button.svelte";
 
 	function capFirstLetter(name){
 		let words = name.split("_");
@@ -64,6 +65,7 @@
 	<h1>EU4, Best Game in whole World</h1>
 
 	<h2>Settings</h2>
+
 	<div class="outer-container">
 
 		<!-- DLC selection -->
