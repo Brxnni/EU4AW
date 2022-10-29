@@ -76,7 +76,7 @@
 			<!-- This is why I love svelte -->
 			<div class="left">
 				{#each dlcNames as dlc}
-					<TextCheckbox text={capFirstLetter(dlc)} iconURL={`/dlc_icons/${dlc}.png`}/>
+					<TextCheckbox text={capFirstLetter(dlc)} iconURL={`./dlc_icons/${dlc}.png`}/>
 				{/each}
 			</div>
 
