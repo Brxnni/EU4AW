@@ -22,7 +22,7 @@
 		margin: 0 0 -9px 0;
 
 		/* Checkbox image itself */
-		background-image: url(./checkbox/checkbox_unchecked.png);
+		background-image: url(./../checkbox/checkbox_unchecked.png);
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 
@@ -37,7 +37,7 @@
 
 	div.checked {
 		/* Change image on state change */
-		background-image: url(./checkbox/checkbox_checked.png);
+		background-image: url(./../checkbox/checkbox_checked.png);
 	}
 
 </style>

@@ -28,7 +28,7 @@
 		bottom: 0;
 
 		border: var(--border-container-radius) solid yellow;
-		border-image: url(./gold_border.png) 45/var(--border-container-radius) repeat;
+		border-image: url(./../other/gold_border.png) 45/var(--border-container-radius) repeat;
 		/* Quick solution to make edges less sharp */
 		filter: blur(0.4px);
 
