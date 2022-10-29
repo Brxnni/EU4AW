@@ -1,7 +1,5 @@
 <script>
 
-	import gold_border_thin from "./../assets/gold_border.png";
-	import tileable_bg_big from "./../assets/tileable_bg_big.png";
 
 </script>
 
@@ -17,9 +15,9 @@
 		/* Hide background behind border.
 		   I could do this using a custom path, but this works for now. */
 		border-radius: 60px;
-
-		/* Compensate for border */
-		padding: var(--border-container-radius);
+		
+		/* Compensate for border, but the full border is gigantic so just a small part of it */
+		padding: calc(var(--border-container-radius) * 0.65);
 	}
 
 	div.border {
@@ -30,7 +28,7 @@
 		bottom: 0;
 
 		border: var(--border-container-radius) solid yellow;
-		border-image: url(./../assets/gold_border.png) 45/var(--border-container-radius) repeat;
+		border-image: url(./gold_border.png) 45/var(--border-container-radius) repeat;
 		/* Quick solution to make edges less sharp */
 		filter: blur(0.4px);
 

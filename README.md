@@ -42,3 +42,4 @@ Files grabbed from the EU4 source that may be used for the Website, but are stil
 * Make font size smaller on mobile devices
 * Mirrored end for buttons doesn't look quite right, fix that
 * Fix .wav files not being served on build or dev
+* Add cool banner backgroud to H1 heading (similar to how the button works)

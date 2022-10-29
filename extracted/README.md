@@ -4,8 +4,6 @@ Some of the files can be found in the original EU4 Game Files: `C:\Program Files
 Some of the files are also from this Repo (big thanks to `birjj`):
 <https://github.com/birjj/r-EU4-styles>
 
-* Sound Effects: `C:\Program Files (x86)\Steam\steamapps\common\Europa Universalis IV\sound`
-
 ## List of original files in ./assets
 
 (EU4 files are in )

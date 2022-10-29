@@ -2,12 +2,6 @@
 
 	export let onClick = () => {};
 
-	// Imports are needed so that the files are included in the build
-	import button_normal_end from "./../assets/button_normal_end.png";
-	import button_normal_middle from "./../assets/button_normal_middle.png";
-	import button_hover_end from "./../assets/button_hover_end.png";
-	import button_hover_middle from "./../assets/button_hover_middle.png";
-
 </script>
 
 <style>
@@ -65,13 +59,13 @@
 	}
 	
 	/* Different images with normal and on hover */
-	div div.beginning { background-image: url("./../assets/button_normal_end.png"); }
-	div div.middle { background-image: url("./../assets/button_normal_middle.png"); }
-	div div.end { background-image: url("./../assets/button_normal_end.png"); }
+	div div.beginning { 		background-image: url("./button/button_normal_end.png"); }
+	div div.middle { 			background-image: url("./button/button_normal_middle.png"); }
+	div div.end { 				background-image: url("./button/button_normal_end.png"); }
 
-	div:hover div.beginning { background-image: url("./../assets/button_hover_end.png"); }
-	div:hover div.middle { background-image: url("./../assets/button_hover_middle.png"); }
-	div:hover div.end { background-image: url("./../assets/button_hover_end.png"); }
+	div:hover div.beginning { 	background-image: url("./button/button_hover_end.png"); }
+	div:hover div.middle { 		background-image: url("./button/button_hover_middle.png"); }
+	div:hover div.end { 		background-image: url("./button/button_hover_end.png"); }
 
 	/* Change cursor on hover for better ✨ UX ✨ */
 	div:hover {
