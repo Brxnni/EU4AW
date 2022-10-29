@@ -13,25 +13,25 @@
 	}
 
 	let dlcNames = [
-		"third_rome",
-		"wealth_of_nations",
-		"art_of_war",
-		"common_sense",
 		"conquest_of_paradise",
-		"cradle_of_civilization",
-		"dharma",
-		"el_dorado",
-		"emperor",
-		"golden_century",
-		"leviathan",
-		"lions_of_the_north",
-		"mandate_of_heaven",
-		"mare_nostrum",
-		"origins",
+		"wealth_of_nations",
 		"res_publica",
+		"art_of_war",
+		"el_dorado",
+		"common_sense",
+		"the_cossacks",
+		"mare_nostrum",
 		"rights_of_man",
+		"mandate_of_heaven",
+		"third_rome",
+		"cradle_of_civilization",
 		"rule_britannia",
-		"the_cossacks"
+		"dharma",
+		"golden_century",
+		"emperor",
+		"leviathan",
+		"origins",
+		"lions_of_the_north"
 	];
 	let availableDLCs = {};
 
@@ -52,6 +52,10 @@
 		width: 49%;
 	}
 
+	.left {
+		text-align: left;
+	}
+
 	p { margin: 0 0 10px 0; }
 
 </style>
@@ -68,9 +72,11 @@
 			<p>Select all DLCs you have available:</p>
 
 			<!-- This is why I love svelte -->
-			{#each dlcNames as dlc}
-				<TextCheckbox text={capFirstLetter(dlc)} iconURL={`/dlc_icons/${dlc}.png`}/>
-			{/each}
+			<div class="left">
+				{#each dlcNames as dlc}
+					<TextCheckbox text={capFirstLetter(dlc)} iconURL={`/dlc_icons/${dlc}.png`}/>
+				{/each}
+			</div>
 
 		</BorderContainer></div>
 
