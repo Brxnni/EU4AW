@@ -34,7 +34,7 @@
 
 	/* Remove some margin from correct side, depending on the direction */
 	div.splitter.up { margin-top: -20px; }
-	div.splitter.down { margin-bottom: -20px; }
+	div.splitter.down { margin-bottom: 5px; }
 
 	div.beginning {
 		width: 43px;
