@@ -34,10 +34,9 @@ Files grabbed from the EU4 source that may be used for the Website, but are stil
 
 ## TODO
 
-* Make border of `BoardContainer.svelte` look nicer by adding some semi-transparent pixels to `./assets/gold_border.png`
+* Make border of `BoardContainer.svelte` look nicer by adding some semi-transparent pixels to `gold_border.png`
 * Make ellipses in `Button.svelte` when text is too long not overflow to the right
-* Add site metadata
-* Make font size smaller on mobile devices
 * Add cool banner backgroud to H1 heading (similar to how the button works)
 * Add tab indeces to checkboxes and all other input elements
 * Add select all for checkbox lists
+* Add locked state for buttons and checkboxes (make them gray using filter: saturation(0%) and unclickable)

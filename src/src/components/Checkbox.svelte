@@ -13,7 +13,7 @@
 	div {
 		/* Inline */
 		display: inline-block;
-			
+
 		/* This can be any size, but bigger than 32px looks blurry */
 		width: 32px;
 		aspect-ratio: 1/1;
@@ -32,7 +32,7 @@
 
 	div:hover {
 		/* No seperate images for hover, just extra brightness */
-		filter: brightness(110%);
+		filter: brightness(120%);
 	}
 
 	div.checked {

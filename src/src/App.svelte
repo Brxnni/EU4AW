@@ -13,6 +13,15 @@
 		return words.join(" ");
 	}
 
+	let difficultyNames = [
+		"Very Easy",
+		"Easy",
+		"Medium",
+		"Hard",
+		"Very Hard",
+		"Insane"
+	]
+
 	let dlcNames = [
 		"conquest_of_paradise",
 		"wealth_of_nations",
@@ -34,11 +43,16 @@
 		"origins",
 		"lions_of_the_north"
 	];
+
 	let availableDLCs = {};
 
 </script>
 
 <style>
+
+	main {
+		text-align: center;
+	}
 
 	/* These headings will be replaced by custom components later anyway */
 	h1, h2 {
@@ -46,9 +60,8 @@
 	}
 
 	.outer-container {
-		text-align: center;
 		max-width: 100%;
-		margin: auto;
+		margin: 0 auto 30px auto ;
 	}
 	
 	.inline {
@@ -90,8 +103,20 @@
 		</BorderContainer></div>
 
 		<!-- Difficulty selection -->
-		<div class="inline"><BorderContainer> Difficulty selection goes here... </BorderContainer></div>
+		<div class="inline"><BorderContainer> 
+			
+			<p>Select all difficulties that are acceptable:</p>
+
+			<div class="left">
+				{#each difficultyNames as diff, i}
+					<TextCheckbox checked text={diff} iconURL={`./diff_icons/diff_${i}.png`}/>
+				{/each}
+			</div>
+
+		</BorderContainer></div>
 
 	</div>
+
+	<Button>Roll!</Button>
 
 </main>
