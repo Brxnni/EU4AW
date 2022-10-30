@@ -61,7 +61,8 @@
 
 	.outer-container {
 		max-width: 100%;
-		margin: 0 auto 30px auto ;
+		margin: 0 auto 30px auto;
+		user-select: none;
 	}
 	
 	.inline {
@@ -71,6 +72,7 @@
 		width: 49%;
 		max-width: fit-content;
 		margin: 10px;
+		user-select: auto;
 	}
 
 	.left {
@@ -92,7 +94,6 @@
 		<div class="inline"><BorderContainer>
 		
 			<p>Select all DLCs you have available:</p>
-
 			<!-- This is why I love svelte -->
 			<div class="left">
 				{#each dlcNames as dlc}
@@ -106,7 +107,6 @@
 		<div class="inline"><BorderContainer> 
 			
 			<p>Select all difficulties that are acceptable:</p>
-
 			<div class="left">
 				{#each difficultyNames as diff, i}
 					<TextCheckbox checked text={diff} iconURL={`./diff_icons/diff_${i}.png`}/>

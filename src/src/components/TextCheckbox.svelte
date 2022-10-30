@@ -10,9 +10,13 @@
 
 <style>
 
+	div { user-select: none; }
+	span { user-select: text; }
+
 	img {
 		margin-bottom: -6px;
 		height: 1.2em;
+		pointer-events: none;
 	}
 
 </style>
