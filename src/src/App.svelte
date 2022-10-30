@@ -6,6 +6,7 @@
 	import TextCheckbox from "./components/TextCheckbox.svelte";
 	import Splitter from "./components/Splitter.svelte";
 	import Button from "./components/Button.svelte";
+	import Footer from "./components/Footer.svelte";
 
 	function capFirstLetter(name){
 		let words = name.split("_");
@@ -143,5 +144,6 @@
 	<Button>Roll!</Button>
 
 	<Splitter direction="down" />
+	<Footer />
 
 </main>

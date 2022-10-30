@@ -41,4 +41,4 @@ Files grabbed from the EU4 source that may be used for the Website, but are stil
 * Add select all for checkbox lists
 * Add locked state for buttons and checkboxes (make them gray using filter: saturation(0%) and unclickable)
 * Add custom scrollbar in EU4 style? <https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar>
-* Add footer with GitHub, Social Media, Issues etc. (use some sort of splitter to split from the main part, perhaps a mission arrow?)
+* Add credits file which says where everything comes from (textures, sounds, idea etc.) and add it as a link to the footer
