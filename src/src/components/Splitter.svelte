@@ -62,9 +62,9 @@
 		vertical-align: top;
 	}
 
-	div div.beginning { 		background-image: url("./splitter/splitter_end.png"); }
-	div div.middle { 			background-image: url("./splitter/splitter_middle.png"); }
-	div div.end { 				background-image: url("./splitter/splitter_end.png"); }
+	div div.beginning { 		background-image: url("./../splitter/splitter_end.png"); }
+	div div.middle { 			background-image: url("./../splitter/splitter_middle.png"); }
+	div div.end { 				background-image: url("./../splitter/splitter_end.png"); }
 
 	/* Apparently using scaleY overwrites the scaleX value to 1 (which is stupid) so it needs to be defined again */
 	div.down div.beginning { transform: scale(1, -1) }

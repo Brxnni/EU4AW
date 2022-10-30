@@ -59,9 +59,9 @@
 	}
 	
 	/* Different images with normal and on hover */
-	div div.beginning { 		background-image: url("./button/button_normal_end.png"); }
-	div div.middle { 			background-image: url("./button/button_normal_middle.png"); }
-	div div.end { 				background-image: url("./button/button_normal_end.png"); }
+	div div.beginning { 		background-image: url("./../button/button_normal_end.png"); }
+	div div.middle { 			background-image: url("./../button/button_normal_middle.png"); }
+	div div.end { 				background-image: url("./../button/button_normal_end.png"); }
 
 	div:hover div { filter: brightness(130%); }
 
