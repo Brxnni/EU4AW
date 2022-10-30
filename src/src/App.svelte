@@ -1,5 +1,7 @@
 <script>
 	
+	import { onMount } from "svelte";
+
 	import BorderContainer from "./components/BorderContainer.svelte";
 	import TextCheckbox from "./components/TextCheckbox.svelte";
 	import Button from "./components/Button.svelte";
@@ -14,12 +16,12 @@
 	}
 
 	let difficultyNames = [
-		"Very Easy",
-		"Easy",
-		"Medium",
-		"Hard",
-		"Very Hard",
-		"Insane"
+		"very_easy",
+		"easy",
+		"medium",
+		"hard",
+		"very_hard",
+		"insane"
 	]
 
 	let dlcNames = [
@@ -44,7 +46,12 @@
 		"lions_of_the_north"
 	];
 
-	let availableDLCs = {};
+	let userDLCs = {};
+	let userDiffs = {};
+
+	onMount(() => {
+		console.log(userDLCs, userDiffs);
+	});
 
 </script>
 
@@ -97,7 +104,11 @@
 			<!-- This is why I love svelte -->
 			<div class="left">
 				{#each dlcNames as dlc}
-					<TextCheckbox text={capFirstLetter(dlc)} iconURL={`./dlc_icons/${dlc}.png`}/>
+					<TextCheckbox
+						bind:this={userDLCs[dlc]}
+						text={capFirstLetter(dlc)}
+						iconURL={`./dlc_icons/${dlc}.png`}
+					/>
 				{/each}
 			</div>
 
@@ -109,7 +120,12 @@
 			<p>Select all difficulties that are acceptable:</p>
 			<div class="left">
 				{#each difficultyNames as diff, i}
-					<TextCheckbox checked text={diff} iconURL={`./diff_icons/diff_${i}.png`}/>
+					<TextCheckbox
+						bind:this={userDiffs[diff]}
+						checked
+						text={capFirstLetter(diff)}
+						iconURL={`./diff_icons/diff_${i}.png`}
+					/>
 				{/each}
 			</div>
 

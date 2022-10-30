@@ -2,7 +2,7 @@
 
 	import Checkbox from "./Checkbox.svelte";
 
-	export let checked;
+	export let checked = false;
 	export let iconURL;
 	export let text;
 
