@@ -4,6 +4,7 @@
 
 	import BorderContainer from "./components/BorderContainer.svelte";
 	import TextCheckbox from "./components/TextCheckbox.svelte";
+	import Splitter from "./components/Splitter.svelte";
 	import Button from "./components/Button.svelte";
 
 	function capFirstLetter(name){
@@ -66,6 +67,10 @@
 		text-align: center;
 	}
 
+	h1 {
+		margin: 0;
+	}
+
 	.outer-container {
 		max-width: 100%;
 		margin: 0 auto 30px auto;
@@ -92,7 +97,10 @@
 
 <main>
 
-	<h1>EU4, Best Game in whole World</h1>
+	<h1>The EU4 Achievement Wheel</h1>
+
+	<Splitter direction="up" />
+
 	<h2>Settings</h2>
 
 	<div class="outer-container">
