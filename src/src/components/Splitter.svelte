@@ -26,10 +26,15 @@
 	}
 	
 	div.splitter {
+		display: block;
 		height: 43px;
-		width: 90%;
-		margin-top: -30px;
+		width: 100%;
+		margin: 10px 0 10px 0;
 	}
+
+	/* Remove some margin from correct side, depending on the direction */
+	div.splitter.up { margin-top: -20px; }
+	div.splitter.down { margin-bottom: -20px; }
 
 	div.beginning {
 		width: 43px;
@@ -52,7 +57,7 @@
 		background-size: 100% 14px;
 	}
 
-	div.vertical-mirror div.middle {
+	div.down div.middle {
 		/* Make line connect properly */
 		vertical-align: top;
 	}
@@ -62,12 +67,12 @@
 	div div.end { 				background-image: url("./splitter/splitter_end.png"); }
 
 	/* Apparently using scaleY overwrites the scaleX value to 1 (which is stupid) so it needs to be defined again */
-	div.vertical-mirror div.beginning { transform: scale(1, -1) }
-	div.vertical-mirror div.end { transform: scale(-1, -1) }
+	div.down div.beginning { transform: scale(1, -1) }
+	div.down div.end { transform: scale(-1, -1) }
 
 </style>
 
-<div class="splitter {direction == 'down' ? 'vertical-mirror' : ''}">
+<div class="splitter {direction}">
 	<div class="beginning"></div>
 	<div class="middle"></div>
 	<div class="end"></div>

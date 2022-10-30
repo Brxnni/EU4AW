@@ -98,7 +98,6 @@
 <main>
 
 	<h1>The EU4 Achievement Wheel</h1>
-
 	<Splitter direction="up" />
 
 	<h2>Settings</h2>
@@ -142,5 +141,7 @@
 	</div>
 
 	<Button>Roll!</Button>
+
+	<Splitter direction="down" />
 
 </main>
