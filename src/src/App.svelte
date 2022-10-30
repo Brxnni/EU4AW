@@ -40,17 +40,24 @@
 
 <style>
 
+	/* These headings will be replaced by custom components later anyway */
+	h1, h2 {
+		text-align: center;
+	}
+
 	.outer-container {
 		text-align: center;
 		max-width: 100%;
-		white-space: nowrap;
 		margin: auto;
 	}
 	
 	.inline {
 		display: inline-block;
 		vertical-align: top;
+		min-width: fit-content;
 		width: 49%;
+		max-width: fit-content;
+		margin: 10px;
 	}
 
 	.left {
@@ -62,8 +69,8 @@
 </style>
 
 <main>
-	<h1>EU4, Best Game in whole World</h1>
 
+	<h1>EU4, Best Game in whole World</h1>
 	<h2>Settings</h2>
 
 	<div class="outer-container">

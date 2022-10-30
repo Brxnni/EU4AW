@@ -40,3 +40,4 @@ Files grabbed from the EU4 source that may be used for the Website, but are stil
 * Make font size smaller on mobile devices
 * Add cool banner backgroud to H1 heading (similar to how the button works)
 * Add tab indeces to checkboxes and all other input elements
+* Add select all for checkbox lists
