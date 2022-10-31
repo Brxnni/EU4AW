@@ -24,12 +24,12 @@
 <div class="footer">
 	<BorderContainer>
 
-<ul>
-	<li>Made with <s>💕</s> Code by <a href="https://github.com/Brxnni">Brxnni</a> @ LemmyTech</li>
-	<li>Credits: <a href="https://github.com/Brxnni/EU4AW/">Unimplemented</a></li>
-	<li>Code can be found <a href="https://github.com/Brxnni/EU4AW">here</a></li>
-	<li>Found an issue? Report it <a href="https://github.com/Brxnni/EU4AW/issues/new">here</a></li>
-</ul>
+		<ul>
+			<li>Made with <s>&#128149;</s> Code by		<a target="_blank" rel="noreferrer" href="https://github.com/Brxnni">							Brxnni</a> @ LemmyTech</li>
+			<li>Credits:								<a target="_blank" rel="noreferrer" href="https://github.com/Brxnni/EU4AW/blob/main/CREDITS.md">	Unimplemented</a></li>
+			<li>Code can be found						<a target="_blank" rel="noreferrer" href="https://github.com/Brxnni/EU4AW">						here</a></li>
+			<li>Found an issue? Report it 				<a target="_blank" rel="noreferrer" href="https://github.com/Brxnni/EU4AW/issues/new">			here</a></li>
+		</ul>
 
 	</BorderContainer>
 </div>
