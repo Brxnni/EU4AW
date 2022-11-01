@@ -1,6 +1,7 @@
 <script>
 
 	import Checkbox from "./Checkbox.svelte";
+	import InlineImage from "./InlineImage.svelte";
 
 	export let checked = false;
 	export let iconURL;
@@ -13,16 +14,10 @@
 	div { user-select: none; }
 	span { user-select: text; }
 
-	img {
-		margin-bottom: -6px;
-		height: 1.2em;
-		pointer-events: none;
-	}
-
 </style>
 
 <div>
 	<Checkbox checked={checked}/>
-	{#if iconURL} <img src={iconURL} alt=""> {/if}
+	{#if iconURL} <InlineImage src={iconURL} /> {/if}
 	<span>{text}</span>
 </div>

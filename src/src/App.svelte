@@ -7,6 +7,7 @@
 	import Splitter from "./components/Splitter.svelte";
 	import Button from "./components/Button.svelte";
 	import Footer from "./components/Footer.svelte";
+	import Result from "./components/Result.svelte";
 
 	function capFirstLetter(name){
 		let words = name.split("_");
@@ -51,9 +52,12 @@
 	let userDLCs = {};
 	let userDiffs = {};
 
+	let result;
+
 	onMount(() => {
 		console.log(userDLCs, userDiffs);
 	});
+
 
 </script>
 
@@ -64,11 +68,8 @@
 	}
 
 	/* These headings will be replaced by custom components later anyway */
-	h1, h2 {
-		text-align: center;
-	}
-
 	h1 {
+		text-align: center;
 		margin: 0;
 	}
 
@@ -100,8 +101,6 @@
 
 	<h1>The EU4 Achievement Wheel</h1>
 	<Splitter direction="up" />
-
-	<h2>Settings</h2>
 
 	<div class="outer-container">
 
@@ -141,8 +140,8 @@
 
 	</div>
 
-	<Button>Roll!</Button>
-
+	<Button onClick={() => {result.roll()}}>Roll!</Button>
+	<Result bind:this={result} />
 	<Splitter direction="down" />
 	<Footer />
 
