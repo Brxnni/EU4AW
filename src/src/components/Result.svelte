@@ -5,12 +5,12 @@
 
 	let visible = true;
 
-	let logoSrc = "./achievements_icons/achievement_full_house.png";
-	let achName = "Full House";
+	let logoSrc = "./achievements_icons/achievement_all_that_is_thine_shall_be_mine.png";
+	let achName = "All That's Thine Shall Be Mine";
 	let achDifficulty = "Very Easy";
-	let achDesc = "Have 3 Vassals and 2 Marches at the same time.";
-	let achDLCs = ["art_of_war"];
-	let achCustomNation = false;
+	let achDesc = "As a Greedy ruler, take all of a nation's ducats in a peace deal.";
+	let achDLCs = ["rights_of_man"];
+	let achCustomNation = true;
 
 	function capFirstLetter(name){
 		let words = name.split("_");
@@ -45,8 +45,8 @@
 	/* Update: Eh, it's alright, just a LOT of code needed to do what you want. Looks very cool though! */
 	div.grid {
 		display: grid;
-		grid-template-columns: 50px min-content min-content;
-		grid-template-rows: min-content min-content min-content;
+		grid-template-columns: 64px min-content min-content;
+		grid-template-rows: repeat(3, min-content);
 	}
 
 	div.grid div {
@@ -54,22 +54,9 @@
 	}
 
 	div.icon {
-		grid-column-start: 1;
-		grid-column-end: 1;
-		grid-row-start: 1;
-		grid-row-end: 1;
+		grid-column: 1 / span 1;
+		grid-row: 1 / span 1;
 		padding: 0 !important;
-
-		position: relative;
-	}
-
-	div.icon img {
-		width: 100%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		aspect-ratio: 1/1;
-		transform: translate(-50%, -50%);
 	}
 
 	div.title {
@@ -81,17 +68,16 @@
 	div.title span.difficulty { font-size: 0.75rem; white-space: nowrap; }
 
 	div.description {
-		grid-column-start: 2;
-		grid-column-end: span 2;
+		grid-column: 2 / span 2;
+		grid-row: 2 / span 1;
 
-		grid-row-start: 2;
 		color: lightgray;
 		font-style: italic;
 	}
 
 	div.dlcs {
-		grid-column-start: 2;
-		grid-row-start: 3;
+		grid-column: 2 / span 1;
+		grid-row: 3 / span 1;
 	}
 
 	div.dlcs ul li {
@@ -99,8 +85,8 @@
 	}
 
 	div.misc {
-		grid-column-start: 3;
-		grid-row-start: 3;
+		grid-column: 3 / span 1;
+		grid-row: 3 / span 1;
 	}
 
 	div.misc span.customnation {
@@ -138,16 +124,12 @@
 		</div>
 
 		<div class="misc">
-
 			<span class="customnation">
 				<InlineImage src={achCustomNation ? "./other/yes.png" : "./other/no.png"} ariaHidden={true} />
 				{achCustomNation ? "Possible" : "Not possible"} with Custom Nation
 			</span>
-
 		</div>
 
 	</div>
-
-
 
 </BorderContainer></div>
